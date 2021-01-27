@@ -1,5 +1,5 @@
 # ANNOUNCEMENT
-I have moved this over to the [Tech Interview Cheat Sheet Repo](https://github.com/TSiege/Tech-Interview-Cheat-Sheet) and has been expanded and even has code challenges you can run and practice against!
+I have moved this over to the [Tech Interview Cheat Sheet Repo](https://github.com/) and has been expanded and even has code challenges you can run and practice against!
 
 The below is just for some preservation for those who stumble across here, but is no longer kept up to date.
 
@@ -8,7 +8,7 @@ The below is just for some preservation for those who stumble across here, but i
 This list is meant to be both a quick guide and reference for further research into these topics. It's basically a summary of that comp sci course you never took or forgot about, so there's no way it can cover everything in depth.
 
 ## Contributing
-Please see the [Tech Interview Cheat Sheet Repo](https://github.com/TSiege/Tech-Interview-Cheat-Sheet)
+Please see the [Tech Interview Cheat Sheet Repo](https://github.com/)
 
 ## Data Structure Basics
 
