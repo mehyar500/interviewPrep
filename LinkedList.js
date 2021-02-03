@@ -75,4 +75,30 @@ function LinkedList() {
   this.isEmpty = function() {
     return length === 0;
   }
+
+  this.addAt = (index, element) => {
+    if (index < 0 || index >= length) {
+      return false;
+    }
+
+    let node = head;
+    if (index > 0) {
+      let i = 0;
+      while (i + 1 !== index) {
+        node = node.next;
+        i++;
+      }
+    }
+
+    const newNode = new Node(element);
+    newNode.next = node.next;
+
+    if (index === 0) {
+      head = newNode;
+    } else {
+      node.next = newNode;
+    }
+
+    length++;
+  };
 }
