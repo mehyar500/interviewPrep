@@ -184,14 +184,18 @@ class Node {
       if (this.root == null) {
         return null;
       } else {
+
         var result = new Array();
-        function traverseInOrder(node) {       
-          node.left && traverseInOrder(node.left);
+
+        function traverseInOrder(node) {
+          if( node.left ) traverseInOrder(node.left);
           result.push(node.data);
-          node.right && traverseInOrder(node.right);
+          if( node.right ) traverseInOrder(node.right);
         }
+
         traverseInOrder(this.root);
         return result;
+
       };
     }
 
