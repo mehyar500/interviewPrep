@@ -11,6 +11,7 @@ class Node {
   class BST {
     constructor() {
       this.root = null;
+      this.count = 0;
     }
     add(data) {
 
@@ -189,7 +190,6 @@ class Node {
       };
     }
 
-
     preOrder() {
       if (this.root == null) {
         return null;
@@ -205,7 +205,6 @@ class Node {
       };
     }
 
-
     postOrder() {
       if (this.root == null) {
         return null;
@@ -220,7 +219,6 @@ class Node {
         return result;
       }
     }
-    
     
     levelOrder() {
         let result = [];
