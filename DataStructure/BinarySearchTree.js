@@ -37,7 +37,7 @@ class Node {
               node.left = new Node(data);
               return;
 
-            } else if (node.left !== null) {
+            } else {
 
               return searchTree(node.left);
             }
@@ -49,7 +49,7 @@ class Node {
               node.right = new Node(data);
               return;
 
-            } else if (node.right !== null) {
+            } else {
                 
               return searchTree(node.right);
             }
