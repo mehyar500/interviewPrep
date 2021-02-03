@@ -222,8 +222,8 @@ class Node {
       } else {
         var result = new Array();
         function traversePostOrder(node) {
-          node.left && traversePostOrder(node.left);
-          node.right && traversePostOrder(node.right);
+          if(node.left) traversePostOrder(node.left);
+          if(node.right) traversePostOrder(node.right);
           result.push(node.data);
         };
         traversePostOrder(this.root);
