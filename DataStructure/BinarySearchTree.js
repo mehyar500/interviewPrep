@@ -17,7 +17,7 @@ class Node {
     size() {
         return this.count;
     }
-    
+
     add(data) {
 
       const node = this.root;
@@ -42,7 +42,9 @@ class Node {
               return searchTree(node.left);
             }
 
-          } else if (data > node.data) {
+          }
+          
+          if (data > node.data) {
 
             if (node.right === null) {
 
