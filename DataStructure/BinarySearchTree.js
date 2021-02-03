@@ -207,8 +207,8 @@ class Node {
         var result = new Array();
         function traversePreOrder(node) {
           result.push(node.data);
-          node.left && traversePreOrder(node.left);
-          node.right && traversePreOrder(node.right);
+          if(node.left) traversePreOrder(node.left);
+          if(node.right) traversePreOrder(node.right);
         };
         traversePreOrder(this.root);
         return result;
