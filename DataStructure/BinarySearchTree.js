@@ -13,6 +13,11 @@ class Node {
       this.root = null;
       this.count = 0;
     }
+
+    size() {
+        return this.count;
+    }
+    
     add(data) {
 
       const node = this.root;
