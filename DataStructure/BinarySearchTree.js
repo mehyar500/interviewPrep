@@ -58,6 +58,7 @@ class Node {
         return searchTree(node);
       }
     }
+
     findMin() {
       let current = this.root;
       while (current.left !== null) {
@@ -65,6 +66,7 @@ class Node {
       }
       return current.data;
     }
+
     findMax() {
       let current = this.root;
       while (current.right !== null) {
@@ -72,6 +74,7 @@ class Node {
       }
       return current.data;
     }
+
     find(data) {
       let current = this.root;
       while (current.data !== data) {
@@ -86,6 +89,7 @@ class Node {
       }
       return current;
     }
+
     isPresent(data) {
       let current = this.root;
       while (current) {
@@ -100,6 +104,7 @@ class Node {
       }
       return false;
     }
+
     remove(data) {
       const removeNode = function(node, data) {
         if (node == null) {
@@ -136,9 +141,11 @@ class Node {
       }
       this.root = removeNode(this.root, data);
     }
+    
     isBalanced() {
       return (this.findMinHeight() >= this.findMaxHeight() - 1)
     }
+
     findMinHeight(node = this.root) {
         if (node == null) {
             return -1;
@@ -151,6 +158,8 @@ class Node {
             return right + 1;
         };
     }
+    
+
     findMaxHeight(node = this.root) {
         if (node == null) {
             return -1;
@@ -163,6 +172,8 @@ class Node {
             return right + 1;
         };
     }
+
+
     inOrder() {
       if (this.root == null) {
         return null;
@@ -177,6 +188,8 @@ class Node {
         return result;
       };
     }
+
+
     preOrder() {
       if (this.root == null) {
         return null;
@@ -191,6 +204,8 @@ class Node {
         return result;
       };
     }
+
+
     postOrder() {
       if (this.root == null) {
         return null;
@@ -205,6 +220,7 @@ class Node {
         return result;
       }
     }
+    
     
     levelOrder() {
         let result = [];
