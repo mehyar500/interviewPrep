@@ -11,7 +11,7 @@ class Node {
   class BST {
     constructor() {
       this.root = null;
-      this.count = 0;
+      this.count = 1;
     }
 
     size() {
@@ -232,6 +232,7 @@ class Node {
     }
     
     // breadth first search
+    // BFS
     // level by level
     // use a queue
     levelOrder() {
