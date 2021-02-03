@@ -179,7 +179,7 @@ class Node {
         };
     }
 
-
+    // left, root, right
     inOrder() {
       if (this.root == null) {
         return null;
@@ -195,6 +195,7 @@ class Node {
       };
     }
 
+    // root, left, right
     preOrder() {
       if (this.root == null) {
         return null;
@@ -210,6 +211,7 @@ class Node {
       };
     }
 
+    // left, right, root
     postOrder() {
       if (this.root == null) {
         return null;
@@ -225,6 +227,8 @@ class Node {
       }
     }
     
+    // breadth first search
+    // level by level
     levelOrder() {
         let result = [];
         let Q = []; 
