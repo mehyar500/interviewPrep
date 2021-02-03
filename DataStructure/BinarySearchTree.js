@@ -229,6 +229,7 @@ class Node {
     
     // breadth first search
     // level by level
+    // use a queue
     levelOrder() {
         let result = [];
         let Q = []; 
