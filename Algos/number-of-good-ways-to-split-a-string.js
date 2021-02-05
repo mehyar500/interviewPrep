@@ -4,14 +4,11 @@
  * Return the number of good splits you can make in s.
  * 
  */
+
 /**
- * Problem can be solved with two maps. 
- * First we need to collect counts of every character in a string and also number of unique chars. 
- * This will represent of what we have to the right if we imagine splitting the string and initial position will be at index 0.
- * Then we start moving point of split from left to right all the way to the last string index. 
- * On every move we decrease count of chars for our right side. 
- * At the same time we increase the count of chars for our left side.
- * At the end of every split iteration we check if count of chars to the left equals to count of chars to the right.
+ * Here Idea is to keep track of number of distinct elements in left of split/map and right of split/map.
+ * 
+ *  
  */
 
  /**
