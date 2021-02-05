@@ -255,6 +255,17 @@ class Node {
             return null;
         };
     };
+
+    invert(node = this.root) {
+        if (node) {
+            const temp = node.left;
+            node.left = node.right;
+            node.right = temp;
+            this.invert(node.left);
+            this.invert(node.right);
+          }
+        return node;
+    }
   }
   
   
