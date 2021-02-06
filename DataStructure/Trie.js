@@ -1,4 +1,7 @@
-/* Trie Data Structure */
+/* Trie Data Structure
+ * The trie data structure (sometimes called a prefix tree) is a special type of tree 
+ * used to store associative data structures.
+*/
 
 let Node = function() {
 	this.keys = new Map();
