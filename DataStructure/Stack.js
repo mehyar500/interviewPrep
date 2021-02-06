@@ -1,3 +1,6 @@
+/**
+ * 
+ */
 class Stack {
   constructor() {
     this.collection = [];
