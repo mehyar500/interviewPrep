@@ -110,9 +110,16 @@ let MinHeap = function() {
 		return smallest;
 	};
   
+	// o(logn)
+	// taking unsorted array
+	// adding each item in the array into a minHeap
+	// and extracting every item out of the min heap into the array
+	// to make sure we leave the original items untouched
 	this.sort = function() {
 		let result = new Array();
 		while (heap.length > 1) {
+			// we'll put all the smallest items in order 
+			// since we're pushing the smallest items using remove method
 			result.push(this.remove());
 		};
 		return result;
