@@ -1,4 +1,6 @@
-/* Graphs: Breadth-first search */
+/* Graphs: Breadth-first search
+  FIFO
+*/
 /**
  * BFS is a traversing algorithm where you should start traversing from a selected node 
  * which is a source or starting node and traverse the graph layerwise thus exploring the neighbour nodes (nodes which are directly connected to source node). 

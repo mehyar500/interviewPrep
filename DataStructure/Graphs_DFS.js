@@ -1,5 +1,6 @@
 /**
  * Depth-First Search
+ * LIFO
  * Whereas the breadth-first search searches incremental edge lengths away from the source node, 
  * depth-first search first goes down a path of edges as far as it can.
  * 
