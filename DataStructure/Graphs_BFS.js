@@ -68,7 +68,7 @@ function bfs(graph, root) {
   ];
   console.log(bfs(exBFSGraph, 1));
 
-  function bfs(value, tree) {
+  function bfs2(value, tree) {
 
     queue = [];
   
