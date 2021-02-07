@@ -63,21 +63,3 @@ function isFound(roots, i) {
         }
         return null;
   }
-
-  // simple
-  function dfs3(value, node) {
-
-    stack = [];
-  
-    stack.push(node);
-  
-    while (stack.length != 0) {
-      var curNode = stack.peek()
-      if (curNode.value == value) {
-        return curNode;
-      }
-      curNode.visited = true
-      stack.push(getFirstUnvistedNode(curNode));
-    }
-  
-  }
