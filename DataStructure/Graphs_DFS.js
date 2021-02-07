@@ -46,3 +46,40 @@ function isFound(roots, i) {
     [0, 0, 1, 0]
   ];
   console.log(dfs(exDFSGraph, 3));
+
+
+  // Recursive
+    function dfs2(value, node) {
+
+        if (node.value === value) {
+        return node;
+        }
+    
+        var len = node.children.length;
+    
+        for (var i = 0; i < len; i++) {
+        var foundNode = dfs2(value, node.children[i]);
+        if (foundNode) {
+            return foundNode;
+        }
+        }
+        return null;
+  }
+
+  // simple
+  function dfs3(value, node) {
+
+    stack = [];
+  
+    stack.push(node);
+  
+    while (stack.length != 0) {
+      var curNode = stack.peek()
+      if (curNode.value == value) {
+        return curNode;
+      }
+      curNode.visited = true
+      stack.push(getFirstUnvistedNode(curNode));
+    }
+  
+  }
