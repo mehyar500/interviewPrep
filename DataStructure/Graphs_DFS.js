@@ -10,8 +10,6 @@
  * 
  */
 
-
-
 function isFound(roots, i) {
     for(let k = 0; k < roots.length; ++k) {
       if(roots[k] == i) {
