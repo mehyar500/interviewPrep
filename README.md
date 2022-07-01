@@ -1,6 +1,3 @@
-
-The below is just for some preservation for those who stumble across here, but is no longer kept up to date.
-
 ## Studying for a Tech Interview Sucks, so Here's a Cheat Sheet to Help
 
 This list is meant to be both a quick guide and reference for further research into these topics. It's basically a summary of that comp sci course you never took or forgot about, so there's no way it can cover everything in depth.
