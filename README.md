@@ -1,5 +1,3 @@
-# ANNOUNCEMENT
-I have moved this over to the [Tech Interview Cheat Sheet Repo](https://github.com/) and has been expanded and even has code challenges you can run and practice against!
 
 The below is just for some preservation for those who stumble across here, but is no longer kept up to date.
 
