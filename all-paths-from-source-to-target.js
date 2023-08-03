@@ -20,11 +20,34 @@
     Output: [[0,4],[0,3,4],[0,1,3,4],[0,1,2,3,4],[0,1,4]]
 
  */
+const _allPathsSourceTarget = (graph, currNode, path, allPaths) => {
+    // Add the current node to path
+    path.push(currNode);
 
-/**
- * @param {number[][]} graph
- * @return {number[][]}
- */
-var allPathsSourceTarget = function(graph) {
-    
+    // Check if the current node is the target (last node)
+    if (currNode === graph.length - 1) {
+        // Make sure to clone the path
+        allPaths.push([...path]);
+    } else {
+        // Continue DFS for neighbors
+        for (let nextNode of graph[currNode]) {
+            _allPathsSourceTarget(graph, nextNode, path, allPaths);
+        }
+    }
+
+    // Remove the current node from path for backtracking
+    path.pop();
 };
+
+var allPathsSourceTarget = function(graph) {
+    let allPaths = [], path = [];
+    _allPathsSourceTarget(graph, 0, path, allPaths);
+    return allPaths;
+};    
+
+
+// The graph represented as an adjacency list
+let graph = [[1,2],[3],[3],[]]
+
+// Function call
+console.log(allPathsSourceTarget(graph));
